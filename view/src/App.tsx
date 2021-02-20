@@ -66,7 +66,7 @@ function App() {
   }[]>([])
   useEffect(() => {
     ;(async() => {
-      const resp = await fetch('/domains.json')
+      const resp = await fetch('domains.json')
       const domains = await resp.json()
       setDomains(domains)
     })()

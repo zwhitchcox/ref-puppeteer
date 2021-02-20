@@ -25,6 +25,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://zwhitchcox.github.io/ref-puppeteer",
   "eslintConfig": {
     "extends": [
       "react-app",
