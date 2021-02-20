@@ -20,6 +20,9 @@ const patternMatch = (str: string, pattern: string) => {
   for (let i = 0; i < pattern.length; i++) {
     const letter = str[i]
     const pat = pattern[i]
+    if (pat === '*') {
+      continue
+    }
     if (pat === CONSONANT_SYMBOL) {
       if (!isConsonant(letter)) {
         return false
@@ -56,6 +59,7 @@ function App() {
   const [priceLimit, setPriceLimit] = useState(10000)
   const [newPattern, setNewPattern] = useState("")
   const [patterns, setPatterns] = useState(startPatterns)
+  const [showPatternsExplanation, setShowPatternsExplanation] = useState(false)
   const [domains, setDomains] = useState<{
     name: string
     price: string
@@ -106,6 +110,28 @@ function App() {
       }}>
         Add Pattern
       </button>
+      <button onClick={() => setShowPatternsExplanation(!showPatternsExplanation)}>
+        How Patterns Work
+      </button>
+      {!showPatternsExplanation ? "" : (
+        <div>
+          <p>
+            A '$' represents a consonant.
+          </p>
+          <p>
+            A '_' represents a vowel.
+          </p>
+          <p>
+            Any letter represents itself.
+          </p>
+          <p>
+            A number represents the 0-indexed character in the string. So, for a domain that's all the same letter, I would make the pattern '$000', that's consonant, then the same consonant, then the same consonant, then the same consonant, e.g. cccc.
+          </p>
+          <p>
+            A '*' can represent any character.
+          </p>
+        </div>
+      )}
       <div className="patterns">
         {Object.entries(patterns).map(([key, value]) => {
           return (
