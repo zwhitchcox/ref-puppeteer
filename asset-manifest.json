@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ref-puppeteer/static/css/main.7983f6a8.chunk.css",
-    "main.js": "/ref-puppeteer/static/js/main.d7d38f3f.chunk.js",
-    "main.js.map": "/ref-puppeteer/static/js/main.d7d38f3f.chunk.js.map",
+    "main.css": "/ref-puppeteer/static/css/main.b6050ff4.chunk.css",
+    "main.js": "/ref-puppeteer/static/js/main.066933de.chunk.js",
+    "main.js.map": "/ref-puppeteer/static/js/main.066933de.chunk.js.map",
     "runtime-main.js": "/ref-puppeteer/static/js/runtime-main.4af04b84.js",
     "runtime-main.js.map": "/ref-puppeteer/static/js/runtime-main.4af04b84.js.map",
     "static/js/2.5f91f7ac.chunk.js": "/ref-puppeteer/static/js/2.5f91f7ac.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.94c6ca27.chunk.js": "/ref-puppeteer/static/js/3.94c6ca27.chunk.js",
     "static/js/3.94c6ca27.chunk.js.map": "/ref-puppeteer/static/js/3.94c6ca27.chunk.js.map",
     "index.html": "/ref-puppeteer/index.html",
-    "static/css/main.7983f6a8.chunk.css.map": "/ref-puppeteer/static/css/main.7983f6a8.chunk.css.map",
+    "static/css/main.b6050ff4.chunk.css.map": "/ref-puppeteer/static/css/main.b6050ff4.chunk.css.map",
     "static/js/2.5f91f7ac.chunk.js.LICENSE.txt": "/ref-puppeteer/static/js/2.5f91f7ac.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4af04b84.js",
     "static/js/2.5f91f7ac.chunk.js",
-    "static/css/main.7983f6a8.chunk.css",
-    "static/js/main.d7d38f3f.chunk.js"
+    "static/css/main.b6050ff4.chunk.css",
+    "static/js/main.066933de.chunk.js"
   ]
 }
