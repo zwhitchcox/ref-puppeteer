@@ -66,7 +66,7 @@ function App() {
   }[]>([])
   useEffect(() => {
     ;(async() => {
-      const resp = await fetch('domains.json')
+      const resp = await fetch('/ref-puppeteer/domains.json')
       const domains = await resp.json()
       setDomains(domains)
     })()
@@ -101,18 +101,24 @@ function App() {
           }}
           />
       </label>
-      <button className="add-new-pattern" onClick={() => {
-        setPatterns({
-          ...patterns,
-          [newPattern]: true
-        })
-        setNewPattern("")
-      }}>
-        Add Pattern
-      </button>
-      <button onClick={() => setShowPatternsExplanation(!showPatternsExplanation)}>
-        How Patterns Work
-      </button>
+      <div className="btns">
+        <button className="add-new-pattern" onClick={() => {
+          setPatterns({
+            ...patterns,
+            [newPattern]: true
+          })
+          setNewPattern("")
+        }}>
+          Add Pattern
+        </button>
+        <button
+          className="explanation"
+          onClick={() => {
+            setShowPatternsExplanation(!showPatternsExplanation)
+          }}>
+          How Patterns Work
+        </button>
+      </div>
       {!showPatternsExplanation ? "" : (
         <div>
           <p>

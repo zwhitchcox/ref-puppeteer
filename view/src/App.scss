@@ -32,6 +32,12 @@ label.price-limit, label.new-pattern {
   }
 }
 
-.add-new-pattern {
-  width: 6rem;
+.add-new-pattern, .explanation {
+  width: 10rem;
+  height: 2rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-evenly;
 }
